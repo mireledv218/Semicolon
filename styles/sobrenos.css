@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Young+Serif&display=swap');
+@import 'animate.css';
+
+:root{
+    --cor-1: #ffffff;
+    --cor-2: #6c6248;
+    --font-title: 'Libre Baskerville', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    --font-num:'Rakkas', sans-serif;
+}
+
+
+body{
+    background-color: var(--cor-1);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+nav {
+    padding: 30px;
+    display: flex;
+    justify-content: right; /* Centraliza os itens no centro */
+    margin-right: 40px;
+    margin-top: 5px;
+    gap: 60px; /* Controle de espaçamento entre links */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-body);
+    position: relative; /* Define o contexto para o ::after */
+    transition: 0.5s ease-in-out;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 105%;
+}
+
+.logo{
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -130px;
+}
+
+.equipe{
+    width: 40%;
+    height: auto;
+    margin-left: 850px;
+    margin-top: 50px
+}
+
+.container_1{
+    margin-top: -490px;
+    margin-left: 50px;
+    font-family: var(--font-body);
+}
+
+.conheca h1{
+    font-family: var(--font-body);
+    color: var(--cor-2);
+    font-size: 40px;
+}
+
+.conheca h3{
+    font-family: var(--font-body);
+    margin-top: 30px;
+    color: var(--cor-2);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.conheca p{
+    width: 800px;
+}
+
+.missao h3{
+    font-family: var(--font-body);
+    margin-top: 10px;
+    color: var(--cor-2);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.missao p{
+    width: 700px;
+}
+
+.visao h3{
+    font-family: var(--font-body);
+    margin-top: 10px;
+    color: var(--cor-2);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.visao p{
+    width: 600px;
+}
+
+.hr1{
+    background-color: var(--cor-2);
+    width: 300px;
+    height: 3px;
+    margin-top: 300px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.valores {
+    margin-top: 100px;
+    display: flex;
+    gap: 40px !important;
+    height: 200px;
+    justify-content: center;
+}
+
+.valores h4{
+    color: var(--cor-2);
+    font-family: var(--font-body);
+    font-size: 22px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.nv{
+    text-align: center;
+    font-family: var(--font-body);
+    color: var(--cor-2);
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.hr2{
+    background-color: var(--cor-2);
+    width: 300px;
+    height: 3px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.historia{
+    margin-top: 150px;
+}
+
+.historia img{
+    width: 50%;
+    margin-top: 05px;
+    margin-left: 690px;
+    margin-bottom: 10px;
+}
+
+.historia h1{
+    position: absolute;
+    font-family: var(--font-body);
+    color: var(--cor-2);
+    font-size: 40px;
+    margin-top: -600px;
+    margin-left: 50px;
+}
+
+.existencia{
+    font-family: var(--font-body);
+    margin-top: -500px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    color: var(--cor-2);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.history{
+    font-family: var(--font-body);
+    margin-bottom: 10px;
+    margin-left: 70px;
+    color: var(--cor-2);
+    font-size: 25px;
+    font-weight: 600;    
+}
+
+.historia p{
+    width: 600px;
+    margin-bottom: 20px;
+    font-family: var(--font-body);
+    font-size: 18px;
+    margin-left: 70px;
+}
+
+.juntese {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 200px;
+}
+
+
+
+.juntese h3{
+    font-family: var(--font-body);
+    color: var(--cor-2);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.juntese a{
+    background-color: var(--cor-2);
+    color: var(--cor-1);
+    font-family: var(--font-body);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 15px 20px;
+
+    transition: 0.5s;
+
+}
+
+.juntese a:hover{
+    background-color: #a99d7e ;
+}
+
+footer{
+    background-color: var(--cor-2);
+    margin-top: 200px;
+    width: 100%;
+    height: 480px;
+
+}
+
+footer img{
+    position: relative;
+    top: 80px;
+    left: 60px;
+}
+
+.infos{
+    font-family: var(--font-body);
+    color: var(--cor-1);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 120px;
+    margin-left: 160px;
+}
+
+.direitos{
+    font-family: var(--font-body);
+    color: var(--cor-1);
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+
+.vertical-line {
+    width: 2px; /* Largura da linha */
+    height: 300px; /* Altura da linha */
+    background-color: var(--cor-1); /* Cor da linha */
+    position: relative;
+    bottom: 290px;
+    left: 800px;
+}
+
+.link-list {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;      
+    margin-left: 1100px; /* Remove o padding padrão da lista */
+    margin-top: -550px;        /* Remove o margin padrão da lista */
+}
+
+.link-list h2{
+    color: var(--cor-1);
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--cor-1);
+    margin-left: -145px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.link-list li {
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+.link-list a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: var(--cor-1);
+    font-family: var(--font-body);           /* Cor do texto */
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.link-list a:hover {
+    opacity: 0.5; /* Cor do link ao passar o mouse */
+}

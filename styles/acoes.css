@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Young+Serif&display=swap');
+@import 'animate.css';
+
+:root{
+    --cor-1: #ffffff;
+    --cor-2: #6c6248;
+    --font-title: 'Libre Baskerville', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    --font-num:'Rakkas', sans-serif;
+}
+
+
+body{
+    background-color: var(--cor-1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    padding: 30px;
+    display: flex;
+    justify-content: right; /* Centraliza os itens no centro */
+    margin-right: 40px;
+    margin-top: 5px;
+    gap: 60px; /* Controle de espaçamento entre links */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-body);
+    position: relative; /* Define o contexto para o ::after */
+    transition: 0.5s ease-in-out;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 105%;
+}
+
+img{
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -130px;
+}
+
+
+
+.titulo {
+    font-family: var(--font-title);
+    text-align: center;
+    color: var(--cor-2);
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.subtitulo{
+    font-family: var(--font-body);
+    text-align: center;
+    margin-left: 225px;
+    font-weight: 500;
+    width: 70%;
+}
+p{
+    font-family: var(--font-body);
+    margin-left: 100px;
+    font-weight: 400;
+    width: 80%;
+}
+
+.texto_1{
+    margin: 10px 0;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.foto_1{
+    margin-left: 880px;
+    margin-top: 10PX;
+}
+
+.texto_2{
+    margin: 10px 0;
+    padding: 0 40px;
+    text-align: left;
+    width: 45%;
+    margin-left: 20px;
+}
+
+.titulo_2{
+    margin-top: 60px;
+    margin-left: 30px;
+    font-size: 1.8rem;
+    font-family: var(--font-body);
+}
+
+.fotinha{
+    margin-left: 880px;
+    margin-top: 10PX;
+}
+
+.titulo_3{
+    margin-top: 150px;
+    margin-left: 30px;
+    font-size: 1.8rem;
+    font-family: var(--font-body);
+}
+
+
+.titulo_4{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 1.8rem;
+    text-align: left;
+    font-family: var(--font-body);
+}
+
+
+
+.titulo_5{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 1.8rem;
+    text-align: left;
+    font-family: var(--font-body);
+}
+
+
+
+.titulo_6{
+    margin-top: 100px;
+    margin-left: 20px;
+    font-size: 1.8rem;
+    text-align: left;
+    font-family: var(--font-body);
+}
+
+.titulo_7{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 1.8rem;
+    font-family: var(--font-body);
+}
+
+.titulo_8{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 1.8rem;
+    font-family: var(--font-body);
+}
+
+.titulo_9{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: var(--font-body);
+}
+
+.texto_9{
+    text-align: center;
+}
+
+h2, h3 {
+    color: var(--cor-2);
+    margin-bottom: 20px;
+}  
+
+footer{
+    background-color: var(--cor-2);
+    margin-top: 150px;
+    width: 100%;
+    height: 400px;
+
+}
+
+footer img{
+    position: relative;
+    top: 160px;
+    left: 60px;
+}
+
+.infos{
+    font-family: var(--font-body);
+    color: var(--cor-1);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 180px;
+    margin-left: 160px;
+}
+
+.direitos{
+    font-family: var(--font-body);
+    color: var(--cor-1);
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.vertical-line {
+    width: 2px; /* Largura da linha */
+    height: 300px; /* Altura da linha */
+    background-color: var(--cor-1); /* Cor da linha */
+    position: relative;
+    bottom: 290px;
+    left: 800px;
+}
+
+.link-list {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;      
+    margin-left: 1100px; /* Remove o padding padrão da lista */
+    margin-top: -550px;        /* Remove o margin padrão da lista */
+}
+
+.link-list h2{
+    color: var(--cor-1);
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--cor-1);
+    margin-left: -150px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
+.link-list li {
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+.link-list a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: var(--cor-1);
+    font-family: var(--font-body);           /* Cor do texto */
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.link-list a:hover {
+    opacity: 0.5; /* Cor do link ao passar o mouse */
+}
